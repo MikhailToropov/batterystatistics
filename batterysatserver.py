@@ -16,7 +16,7 @@ class MyTCPHandler(socketserver.BaseRequestHandler):
 def main():
     print(sys.argv)
     print("Server start")
-    HOST, PORT = "heuft.su", 22222
+    HOST, PORT = "localhost", 22222
     with socketserver.TCPServer((HOST, PORT), MyTCPHandler) as server:
         server.serve_forever()
     
