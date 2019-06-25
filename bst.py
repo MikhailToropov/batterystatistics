@@ -4,7 +4,7 @@ import socket
 def main():
     print(sys.argv)
     print("Client")
-    HOST, PORT = "localhost", 22222
+    HOST, PORT = "heuft.su", 22222
     
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
         sock.connect((HOST, PORT))
